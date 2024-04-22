@@ -1,0 +1,38 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Define a lambda expression to compute the sum of two numbers
+        Func<double, double, double> add = (x, y) => x + y;
+
+        // Input two numbers from the user
+        Console.Write("Enter the first number: ");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        // Compute the sum using the lambda expression
+        double sum = add(num1, num2);
+
+        // Display the sum to the user
+        Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
+    }
+}
+
+
+
+
+
+
+
+
+
+In this code:
+
+We define a lambda expression add of type Func<double, double, double> that takes two double parameters x and y, and returns their sum.
+We input two numbers from the user.
+We invoke the lambda expression add with the provided numbers to compute their sum.
+Finally, we display the computed sum to the user.
