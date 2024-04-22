@@ -21,3 +21,26 @@ class Program
         Console.WriteLine($"The area of the rectangle with length {length} and width {width} is {area} square units.");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In this code:
+
+We define a Func<double, double, double> delegate named computeArea that takes two double parameters (length and width) and returns a double (area).
+We use a lambda expression (length, width) => length * width to define the implementation of the delegate, which calculates the area of the rectangle.
+We input the length and width of the rectangle from the user.
+We invoke the computeArea delegate with the provided length and width to compute the area of the rectangle.
+Finally, we display the computed area to the user.
