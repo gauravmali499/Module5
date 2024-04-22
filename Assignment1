@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Define a Func delegate that takes two double parameters (length and width) and returns a double (area)
+        Func<double, double, double> computeArea = (length, width) => length * width;
+
+        // Input length and width of the rectangle
+        Console.Write("Enter the length of the rectangle: ");
+        double length = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter the width of the rectangle: ");
+        double width = Convert.ToDouble(Console.ReadLine());
+
+        // Compute the area of the rectangle using the Func delegate
+        double area = computeArea(length, width);
+
+        // Display the computed area
+        Console.WriteLine($"The area of the rectangle with length {length} and width {width} is {area} square units.");
+    }
+}
